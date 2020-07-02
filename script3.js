@@ -126,5 +126,36 @@ console.log(john);
 console.log(john.indexOf(1990)); /* this shows you the position of a particular element in the array 
                                     and if the element is not in the array it wil return -1 */
                                      
-var isDesigner = john.indexOf('designer') === -1 ? ('john is not a designer' ) :('john is a designer');
+var isDesigner = john.indexOf('designer') === -1 ? ('john is not a designer' ) : console.log('john is a designer');
 console.log(isDesigner);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CHALLENGE 3
+function tipCalculator (bill) {
+    var percenage;
+    if (bill < 50 ){
+        percenage = .2;
+    } else if (bill >= 50 && bill < 200){
+        percenage = .15;
+    } else {
+        percenage = .1;
+    } 
+    return percenage * bill
+}
+var biils = [124, 48, 268];
+var tips = [tipCalculator(biils[0]), tipCalculator(biils[1]), tipCalculator(biils[2])];
+var finalValues = [tips[0] + biils[0], tips[1] + biils[1], tips[2] + biils[2]];
+console.log(tips);
+console.log(finalValues);
